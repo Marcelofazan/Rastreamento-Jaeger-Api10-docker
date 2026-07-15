@@ -22,32 +22,25 @@ Exemplo de API rastreamento distribuído com Jaeger em C# ASP.NET Core 10 com ba
 
 - GET All **https://localhost:55172/api/produtos/**
 - GET Id **https://localhost:55172/api/produtos/6a57b01696541c007da56cd8**
-
-- POST **https://localhost:55172/api/produtos 
+- POST **https://localhost:55172/api/produtos**
 ```bash
 {
   "nome": "ABACAXI",
   "preco": 15.50
 }
 ```
-
 - PUT **https://localhost:55172/api/produtos/6a57b01696541c007da56cd8**
 ```bash
-
 {
   "id" : "6a57b01696541c007da56cd8",
   "nome": "ABACAXI",
   "preco": 16.00
 }
 ```
-
 - DELETE **https://localhost:55172/api/Produtos/6a57b01696541c007da56cd8**
 
-
 #### ⚙️ Configuração Jaeger Interface Web (UI)
-
 - Atualizar sempre a página para que seja recarregados e atualizados os dados **Operation** após requisições.
-
 - Utilizar Filtros **Tags(s)**
 
 ```bash
