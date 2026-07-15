@@ -4,7 +4,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System.Diagnostics;
 
-namespace monitoramento_e_observabilidade.Controllers
+namespace rastreamentoJaeger.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
