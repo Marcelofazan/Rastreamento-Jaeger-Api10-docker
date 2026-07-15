@@ -43,10 +43,19 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 - Atualizar sempre a página para que seja recarregados e atualizados os dados **Operation** após requisições.
 - Utilizar Filtros **Tags(s)**
 
+- GET All / GET Id
 ```bash
-http.response.status_code=200 GET All / GET Id
-http.response.status_code=204 DELETE / PUT  
-http.response.status_code=201 POST 
+http.response.status_code=200
+```
+
+- POST 
+```bash
+http.response.status_code=201 
+```
+
+- DELETE / PUT  
+```bash
+http.response.status_code=204 
 ```
 
 - Visualização de requisições incorretas 
