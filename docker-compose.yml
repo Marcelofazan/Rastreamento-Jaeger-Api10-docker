@@ -1,0 +1,36 @@
+
+services:
+  # Sua API existente
+  rastreamentojaeger:
+    image: ${DOCKER_REGISTRY-}rastreamentojaeger
+    build:
+      context: .
+      dockerfile: rastreamentojaeger/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      # Nome correto das seções mapeadas para o appsettings.json do C#
+      - Jaeger__Host=http://jaeger
+      - Jaeger__Port=4317
+      - MongoDb__ConnectionString=mongodb://mongodb:27017
+    depends_on:
+      - jaeger
+      - mongodb # ADICIONADO: DIZ QUE A API DEPENDE DO MONGODB
+
+  # Serviço do Jaeger
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: banco-jaeger
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    ports:
+      - "16686:16686"   # Painel Web do Jaeger
+      - "4317:4317"     # Protocolo OTLP gRPC
+      - "4318:4318"     # Protocolo OTLP HTTP
+      - "6831:6831/udp" # Porta UDP que seu código C# atual utiliza
+
+  # Serviço do MongoDB
+  mongodb:
+    image: mongo:latest
+    container_name: banco-mongodb
+    ports:
+      - "27017:27017"
