@@ -7,7 +7,6 @@ using OpenTelemetry.Trace;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona o serviço de controladores
 builder.Services.AddControllers();
 
 // Configuração do CORS
@@ -73,7 +72,6 @@ builder.Services.AddOpenTelemetry()
     });
 
 
-// Suporte ao Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
