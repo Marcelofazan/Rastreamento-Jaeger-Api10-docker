@@ -39,7 +39,7 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 ```
 - DELETE **https://localhost:55172/api/Produtos/6a57b01696541c007da56cd8**
 
-#### ⚙️ Configuração Jaeger Interface Web (UI)
+#### 🌐 Jaeger Interface Web (UI)
 - Atualizar sempre a página para que seja recarregados e atualizados os dados **Operation** após requisições. Cada requisição gera **TraceId** e **SpanId**.
 
 - Jaeger **Tags(s)** Utilizar Filtros
