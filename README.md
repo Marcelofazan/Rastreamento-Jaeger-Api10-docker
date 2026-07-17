@@ -11,7 +11,6 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 
 #### 💬 Requisitos do Projeto
 - Necessário **Docker** instalado.
-- Necessário trocar todas as portas a cada execução, opção **"publishAllPorts": true** no arquivo de propriedades **launchSettings**.
   
 #### 🔄 Executar a aplicação Docker 
 
@@ -35,20 +34,20 @@ cd rastreamentoJaeger
 dotnet run
 ```
 
-- A aplicação iniciara no Swagger **https://localhost:XXXXX/swagger/index.html**, copie a porta e altere para o o uso.  
-- Valide a Conexão com o Banco: **https://localhost:XXXXX/health** 
+- A aplicação iniciara no Swagger **http://localhost:8080/swagger/index.html**, copie a porta e altere para o o uso.  
+- Valide a Conexão com o Banco: **http://localhost:8080/health** 
 
 #### 🧪 Executar Endpoints
-- GET Id **https://localhost:XXXXX/api/produtos/{id}**
-- GET All **https://localhost:XXXXX/api/produtos/**
-- POST **https://localhost:XXXXX/api/produtos**
+- GET Id **https://localhost:8080/api/produtos/{id}**
+- GET All **https://localhost:8080/api/produtos/**
+- POST **https://localhost:8080/api/produtos**
 ```bash
 {
   "nome": "ABACAXI",
   "preco": 15.50
 }
 ```
-- PUT **https://localhost:XXXXX/api/produtos/{id}**
+- PUT **https://localhost:8080/api/produtos/{id}**
 ```bash
 {
   "id" : "6a57b01696541c007da56cd8",
@@ -56,7 +55,7 @@ dotnet run
   "preco": 16.00
 }
 ```
-- DELETE **https://localhost:XXXXX/api/Produtos/{id}**
+- DELETE **https://localhost:8080/api/Produtos/{id}**
 
 #### 🌐 Jaeger Interface Web (UI)
 - Para acessar a interface do Jaeger **http://localhost:16686**
