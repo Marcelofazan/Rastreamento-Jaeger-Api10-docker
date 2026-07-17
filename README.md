@@ -16,7 +16,6 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 #### 🔄 Executar a aplicação
 - A aplicação iniciara no Swagger **https://localhost:XXXXX/swagger/index.html**, copie a porta e altere para o o uso.  
 - Valide a Conexão com o Banco: **https://localhost:XXXXX/health** 
-- Para abrir o Jaeger acesse **http://localhost:16686**
 
 #### 🧪 Executar Endpoints
 
@@ -40,6 +39,7 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 - DELETE **https://localhost:XXXXX/api/Produtos/6a57b01696541c007da56cd8**
 
 #### 🌐 Jaeger Interface Web (UI)
+- Para abrir o Jaeger acesse **http://localhost:16686**
 - Atualizar sempre a página para que seja recarregados e atualizados os dados **Operation** após requisições. Cada requisição gera **TraceId** e **SpanId**.
 
 - Jaeger **Tags(s)** Utilizar Filtros
