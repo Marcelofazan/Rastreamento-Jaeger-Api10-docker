@@ -38,16 +38,16 @@ dotnet run
 - Valide a Conexão com o Banco: **http://localhost:8080/health** 
 
 #### 🧪 Executar Endpoints
-- GET Id **https://localhost:8080/api/produtos/{id}**
-- GET All **https://localhost:8080/api/produtos/**
-- POST **https://localhost:8080/api/produtos**
+- GET Id **http://localhost:8080/api/produtos/{id}**
+- GET All **http://localhost:8080/api/produtos/**
+- POST **http://localhost:8080/api/produtos**
 ```bash
 {
   "nome": "ABACAXI",
   "preco": 15.50
 }
 ```
-- PUT **https://localhost:8080/api/produtos/{id}**
+- PUT **http://localhost:8080/api/produtos/{id}**
 ```bash
 {
   "id" : "6a57b01696541c007da56cd8",
@@ -55,7 +55,7 @@ dotnet run
   "preco": 16.00
 }
 ```
-- DELETE **https://localhost:8080/api/Produtos/{id}**
+- DELETE **http://localhost:8080/api/Produtos/{id}**
 
 #### 🌐 Jaeger Interface Web (UI)
 - Para acessar a interface do Jaeger **http://localhost:16686**
