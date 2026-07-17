@@ -6,8 +6,12 @@ services:
     build:
       context: .
       dockerfile: rastreamentojaeger/Dockerfile
+    ports:
+      - "8080:8080" # Porta HTTP padrão do .NET 8/10
+      - "8081:8081" # Porta HTTPS (caso configure certificados)
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
       # Nome correto das seções mapeadas para o appsettings.json do C#
       - Jaeger__Host=http://jaeger
       - Jaeger__Port=4317
