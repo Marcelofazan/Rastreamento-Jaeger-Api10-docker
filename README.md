@@ -11,9 +11,9 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 
 #### 💬 Requisitos do Projeto
 - Necessário **Docker** instalado.
-
-#### 🔄 Executar a aplicação
 - Necessário trocar todas as portas a cada execução, opção **"publishAllPorts": true** no arquivo de propriedades **launchSettings**.
+  
+#### 🔄 Executar a aplicação
 - A aplicação iniciara no Swagger **https://localhost:XXXXX/swagger/index.html**, copie a porta e altere para o o uso.  
 - Valide a Conexão com o Banco: **https://localhost:XXXXX/health** 
 - Para abrir o Jaeger acesse **http://localhost:16686**
