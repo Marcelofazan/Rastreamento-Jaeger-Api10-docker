@@ -22,7 +22,7 @@ docker-compose up --build
 VSCode Terminal [2]
 - Fechar Container 
 ```bash
-docker compose down 
+docker compose down -v --rmi all --remove-orphans
 ```
 
 #### 🔄 Executar a aplicação Desenvolvimento local
