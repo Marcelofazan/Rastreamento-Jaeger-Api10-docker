@@ -18,9 +18,8 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 - Valide a Conexão com o Banco: **https://localhost:XXXXX/health** 
 
 #### 🧪 Executar Endpoints
-
-- GET All **https://localhost:XXXXX/api/produtos/**
 - GET Id **https://localhost:XXXXX/api/produtos/{id}**
+- GET All **https://localhost:XXXXX/api/produtos/**
 - POST **https://localhost:XXXXX/api/produtos**
 ```bash
 {
