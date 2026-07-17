@@ -20,7 +20,7 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 #### 🧪 Executar Endpoints
 
 - GET All **https://localhost:XXXXX/api/produtos/**
-- GET Id **https://localhost:XXXXX/api/produtos/6a57b01696541c007da56cd8**
+- GET Id **https://localhost:XXXXX/api/produtos/{id}**
 - POST **https://localhost:XXXXX/api/produtos**
 ```bash
 {
@@ -28,7 +28,7 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
   "preco": 15.50
 }
 ```
-- PUT **https://localhost:XXXXX/api/produtos/6a57b01696541c007da56cd8**
+- PUT **https://localhost:XXXXX/api/produtos/{id}**
 ```bash
 {
   "id" : "6a57b01696541c007da56cd8",
@@ -36,7 +36,7 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
   "preco": 16.00
 }
 ```
-- DELETE **https://localhost:XXXXX/api/Produtos/6a57b01696541c007da56cd8**
+- DELETE **https://localhost:XXXXX/api/Produtos/{id}**
 
 #### 🌐 Jaeger Interface Web (UI)
 - Para abrir o Jaeger acesse **http://localhost:16686**
