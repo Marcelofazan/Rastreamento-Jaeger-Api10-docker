@@ -1,4 +1,4 @@
-## 📈 Rastreamento-Jaeger-Api10-docker
+## 📈 Rastreamento-Jaeger-docker
 Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NET Core 10 com banco de dados MongoDB.
 
 #### 📋 O que voçê vai ver nesse Projeto
