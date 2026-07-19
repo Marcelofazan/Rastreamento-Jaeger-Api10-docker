@@ -9,6 +9,8 @@ Exemplo de API rastreamento distribuído com Jaeger e OpenTelemetry em C# ASP.NE
 | **OpenTelemetry**  | Framework open source da Cloud Native Computing Foundation (CNCF) que padroniza a forma de coletar, gerar e exportar dados de telemetria de aplicações. |
 | **Tracing**  | É o caminho completo da requisição, formado por uma árvore de múltiplos spans interligados. |
 
+- As aplicações geram traces estruturados. O OpenTelemetry padroniza a coleta e pode enviar tudo para o Jaeger via protocolo OTLP.
+
 #### 💬 Requisitos do Projeto
 - Necessário **Docker** instalado.
   
